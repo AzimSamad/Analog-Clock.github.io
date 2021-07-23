@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #343B49;
+  }
+  
+  #clock {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #1D1D1D;
+    position: relative;
+    border: 9px solid #2D2D2D;
+    box-shadow: 0 0 12px 2px #000000BA, inset 0 0 12px #000000C9;
+  }
+  
+  #clock::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border: 0.3px solid #F5DEB33B;
+  }
+  
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    transform-origin: bottom;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: 0.1px solid #242522;
+  }
+  
+  
+  .hour {
+    width: 8px;
+    height: 28%;
+    background-color: #000;
+  }
+  
+  
+  .minute {
+    width: 5px;
+    height: 38%;
+    background-color: #000;
+  }
+  
+  .second {
+    width: 3px;
+    height: 40%;
+    background-color: #ff0000;
+  }
+  
+  .number {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: white;
+  }
+  
+  .number p {
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  .num1 {
+    transform: rotate(30deg);
+  }
+  
+  .num2 {
+    transform: rotate(60deg);
+  }
+  
+  .num3 {
+    transform: rotate(90deg);
+  }
+  
+  .num4 {
+    transform: rotate(120deg);
+  }
+  
+  .num5 {
+    transform: rotate(150deg);
+  }
+  
+  .num6 {
+    transform: rotate(180deg);
+  }
+  
+  .num7 {
+    transform: rotate(210deg);
+  }
+  
+  .num8 {
+    transform: rotate(240deg);
+  }
+  
+  .num9 {
+    transform: rotate(270deg);
+  }
+  
+  .num10 {
+    transform: rotate(300deg);
+  }
+  
+  .num11 {
+    transform: rotate(330deg);
+  }
+  
+  .num6 p {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  
+  .num7 p, .num5 p, .num4 p {
+    transform: rotate(180deg);
+  }
+  
